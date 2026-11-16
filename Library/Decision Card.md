@@ -1,8 +1,7 @@
-#meta
-
 Every decision record opens with a card: its status, when it was decided and by whom, and what it replaced or relates to. Click the card to edit the frontmatter behind it.
 
 ```space-lua
+-- boot: true
 local function list(v)
   if type(v) == "string" then
     return { v }
@@ -45,9 +44,9 @@ tag.define {
 ```space-style
 .team-adr-card {
   padding: 12px 16px;
-  border: 1px solid #1f3b3a;
-  background: #0b1514;
-  color: #ccfbf1;
+  border: 1px solid var(--ui-surface-border-color);
+  border-radius: 12px;
+  background: var(--ui-accent-surface-color);
   font-size: 0.9em;
 }
 .team-adr-meta {
@@ -55,7 +54,7 @@ tag.define {
   flex-wrap: wrap;
   align-items: center;
   gap: 6px 14px;
-  color: #5f8f8a;
+  color: var(--subtle-color);
 }
 .team-adr-card p {
   margin: 8px 0 0;

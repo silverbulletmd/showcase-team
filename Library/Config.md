@@ -1,8 +1,8 @@
-#meta
-
 Space configuration: the space tree docked on the left, and clicking a tag opens the page that collects it.
 
 ```space-lua
+config.set("theme", "Library/Team Theme")
+
 config.set("view.defaults", {
   ["std.spaceTree"] = {
     dock = "lhs",
